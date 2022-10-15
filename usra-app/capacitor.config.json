@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "usra-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

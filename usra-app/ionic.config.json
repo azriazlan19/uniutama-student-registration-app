@@ -1,0 +1,7 @@
+{
+  "name": "usra-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
