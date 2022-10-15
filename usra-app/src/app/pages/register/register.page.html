@@ -1,0 +1,31 @@
+<ion-content class="bg">
+	<div class="flex-center">
+		<ion-card>
+		  <ion-card-header>
+		  	<img class="logo" src="assets/img/favicon.png">
+		    <ion-card-subtitle>Uniutama Student Registration Application</ion-card-subtitle>
+		  </ion-card-header>
+
+		  <ion-card-content>
+			  <ion-item>
+			    <ion-label position="floating">Email</ion-label>
+			    <ion-input type="email"></ion-input>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label position="floating">Password</ion-label>
+			    <ion-input type="password"></ion-input>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label position="floating">Confirm Password</ion-label>
+			    <ion-input type="password"></ion-input>
+			  </ion-item>
+			  <ion-button expand="block" class="mt-1" color="success" (click)="register()">
+			  	Register
+			  </ion-button>
+			  <ion-button expand="block" fill="clear" class="mt-1" (click)="login()">
+			  	Login to existing account
+			  </ion-button>
+		  </ion-card-content>
+		</ion-card>
+	</div>
+</ion-content>

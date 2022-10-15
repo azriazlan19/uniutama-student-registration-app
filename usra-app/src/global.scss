@@ -24,3 +24,30 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.mt-1 {
+	margin-top: 1rem;
+}
+.pl-0 {
+	padding-left: 0rem;
+}
+ion-button {
+	text-transform: initial;
+}
+.bg {
+	--background: url(assets/img/bg.jpg) 100% 100% no-repeat;
+}
+ion-label {
+	font-size: 15px !important;
+	color: #373E49 !important;
+}
+input {
+	font-size: 15px !important;
+	color: #373E49 !important;
+}

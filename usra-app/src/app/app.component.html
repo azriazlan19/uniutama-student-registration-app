@@ -1,11 +1,24 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
 
+      <ion-header>
+        <div class="center-item">
+          <div class="side-link">
+            <a class="link" href="dashboard">USRA</a>
+          </div>
+          <div class="side-avatar">
+            <img class="avatar" src="assets/img/avatar.jpg" alt="">
+          </div>
+          <ion-label class="side-email"><b>test@usra.com</b></ion-label>
+          <ion-label class="side-note">Registration ID: #test1</ion-label>
+          <ion-label class="side-note">Registered on 15 Oct 22</ion-label>
+        </div>
+       </ion-header>
+
+      <ion-content>
+        <ion-list id="labels-list">
+          <ion-list-header>Registration Process</ion-list-header>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -13,16 +26,15 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
-
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
-        </ion-list>
       </ion-content>
+      
+      <ion-footer>
+        <a class="link" href="login">
+          Logout
+          <ion-icon slot="end" ios="log-out" md="log-out"></ion-icon>
+        </a>
+      </ion-footer>
+
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
